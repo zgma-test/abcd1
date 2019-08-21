@@ -1,0 +1,100 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "74cba9cb-74b2-4df2-8baa-fd736e0aa91d": {
+        "id": "74cba9cb-74b2-4df2-8baa-fd736e0aa91d",
+        "parent": null,
+        "name": "abcd1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "24ff056a-2183-4a77-903f-21ee452fff12"
+        ],
+        "isRemovable": false,
+        "filePath": "abcd1"
+      },
+      "24ff056a-2183-4a77-903f-21ee452fff12": {
+        "id": "24ff056a-2183-4a77-903f-21ee452fff12",
+        "parent": "74cba9cb-74b2-4df2-8baa-fd736e0aa91d",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "abcd1/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "06565afd-acaa-4349-8fa3-5596a2667538": {
+        "id": "06565afd-acaa-4349-8fa3-5596a2667538",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.abcd1function = require(\"./abcd1/function.js\").handler;"
+      },
+      "3410c0d3-79ed-4128-8e1c-795749881153": {
+        "id": "3410c0d3-79ed-4128-8e1c-795749881153",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "74cba9cb-74b2-4df2-8baa-fd736e0aa91d",
+    "openFiles": [
+      "24ff056a-2183-4a77-903f-21ee452fff12"
+    ],
+    "currentFileId": "24ff056a-2183-4a77-903f-21ee452fff12",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "abcd1",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1566386285220
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "abcd1",
+      "url": "https://github.com/zgma-test/abcd1"
+    }
+  }
+}
