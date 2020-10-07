@@ -22,19 +22,24 @@
         "children": [],
         "isRemovable": true,
         "filePath": "abcd1/function.js",
-        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
         "config": {
           "runtime": "nodejs8",
           "timeout": 60,
           "memory": 128,
-          "triggerType": 0
+          "triggerType": 0,
+          "handler": "handler"
         },
         "triggers": [
           {
             "resourceName": "http-trigger",
             "config": {}
           }
-        ]
+        ],
+        "lastUpdated": 1602053565709,
+        "cursor": {
+          "lineNumber": 3,
+          "column": 56
+        }
       },
       "06565afd-acaa-4349-8fa3-5596a2667538": {
         "id": "06565afd-acaa-4349-8fa3-5596a2667538",
@@ -44,8 +49,7 @@
         "isDirectory": false,
         "children": [],
         "isRemovable": false,
-        "filePath": "index.js",
-        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.abcd1function = require(\"./abcd1/function.js\").handler;"
+        "filePath": "index.js"
       },
       "3410c0d3-79ed-4128-8e1c-795749881153": {
         "id": "3410c0d3-79ed-4128-8e1c-795749881153",
@@ -55,12 +59,9 @@
         "isDirectory": false,
         "children": [],
         "isRemovable": false,
-        "filePath": "main.py",
-        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+        "filePath": "main.py"
       }
     },
-    "deletedFiles": [],
-    "rootNode": "74cba9cb-74b2-4df2-8baa-fd736e0aa91d",
     "openFiles": [
       "24ff056a-2183-4a77-903f-21ee452fff12"
     ],
@@ -74,21 +75,25 @@
     },
     "customTemplate": {
       "dialect": null,
-      "definitions": {}
+      "definitions": null,
+      "syntax": "JSON"
     },
     "envVariables": [],
     "packageJSON": {
       "dependencies": {}
-    }
+    },
+    "rootNode": "74cba9cb-74b2-4df2-8baa-fd736e0aa91d"
   },
   "PROJECT_META": {
+    "sigmaVersion": "1.4.4",
     "projectName": "abcd1",
     "projectDescription": "",
     "projectVersion": "1.0.0",
     "projectRegion": "us-east1",
     "platform": "GCP",
+    "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1566386285220
+    "lastSave": 1602053576691
   },
   "VCS_STATE": {
     "provider": "GitHub",
